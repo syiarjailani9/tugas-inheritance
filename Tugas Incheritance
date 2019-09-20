@@ -1,0 +1,37 @@
+class Hewan(object):
+	def __init__ (self, a, k, m):
+		self.anjing = a
+		self.kuda = k
+		self.macam = m
+
+	def jumlahHewan(self):
+		return self.anjing + self.kuda + self.macam
+
+	def cetakData(self):
+		print("Anjing\t: ", self.anjing)
+		print("Kuda\t: ", self.kuda)
+		print("Macam\t: ", self.macam)
+
+	def cetakJH(self):
+		print("Total dari semua hewan diatas\t= ", self.jumlahHewan())
+
+class WarnaHewan(Hewan):
+	def __init__(self, a, k, m, w):
+		self.anjing = a 
+		self.kuda = k 
+		self.macam = m 
+		self.warna = w 
+	def cetakData(self):
+		print("Anjing\t: ", self.anjing)
+		print("Kuda\t: ", self.kuda)
+		print("Macam\t: ", self.macam)
+		print("Warna dari semua hewan tersebut adalah", self.warna)
+
+def main():
+	wh1 = WarnaHewan (16, 11, 18, "coklat")
+  
+  wh1.cetakData()
+  wh1.cetakJH()
+  
+if __name__ == "__main__":
+        main()
